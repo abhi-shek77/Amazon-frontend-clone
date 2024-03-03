@@ -1,3 +1,4 @@
+import {cart} from '../data/cart.js';
 
 //Generating the HTML using JAvaScript
 //Looping through an array products.js or adding new product
