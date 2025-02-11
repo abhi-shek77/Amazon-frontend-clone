@@ -70,7 +70,7 @@ export function loadProductsFetch(){
     products = productsData.map((productDetails)=>{
       if (productDetails.type === 'clothing'){
         return new Clothing(productDetails)
-      }
+      };
       return new Products(productDetails)
     });
 
@@ -79,9 +79,7 @@ export function loadProductsFetch(){
   });
   return promise;
 };
-loadProductsFetch().then(()=>{
-  console.log('next step');
-});
+loadProductsFetch();
 
 /*
 export function loadProducts (fun){
